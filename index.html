@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="estilo.css">
+  <title>Multiple Choice de HDB3</title>
+</head>
+<body>
+
+<h1>Multiple Choice de HDB3</h1>
+
+<form id="quizForm">
+
+  <div class="question" data-correct="b">
+    <h3>1. ¿Qué es HDB3?</h3>
+    <label><input type="radio" name="q1" value="a"> Un protocolo de enrutamiento</label>
+    <label><input type="radio" name="q1" value="b"> Un método de codificación de línea</label>
+    <label><input type="radio" name="q1" value="c"> Un formato de compresión de video</label>
+  </div>
+
+  <div class="question" data-correct="a">
+    <h3>2. ¿Cómo se codifican los unos en HDB3?</h3>
+    <label><input type="radio" name="q2" value="a"> Alternando entre pulsos positivos y negativos</label>
+    <label><input type="radio" name="q2" value="b"> Siempre con pulsos positivos</label>
+    <label><input type="radio" name="q2" value="c"> Solo con ceros intercalados</label>
+  </div>
+
+  <div class="question" data-correct="c">
+    <h3>3. ¿Qué se usa si el número de unos desde la última violación es par?</h3>
+    <label><input type="radio" name="q3" value="a"> B00V</label>
+    <label><input type="radio" name="q3" value="b"> 000B</label>
+    <label><input type="radio" name="q3" value="c"> 000V</label>
+  </div>
+
+  <div class="question" data-correct="a">
+    <h3>4. ¿Qué se usa si el número de unos desde la última violación es impar?</h3>
+    <label><input type="radio" name="q4" value="a"> B00V</label>
+    <label><input type="radio" name="q4" value="b"> 00BV</label>
+    <label><input type="radio" name="q4" value="c"> 000V</label>
+  </div>
+
+  <div class="question" data-correct="b">
+    <h3>5. ¿Cuál es una ventaja de HDB3?</h3>
+    <label><input type="radio" name="q5" value="a"> Requiere menos ancho de banda</label>
+    <label><input type="radio" name="q5" value="b"> Mantiene la sincronización del reloj</label>
+    <label><input type="radio" name="q5" value="c"> Elimina el jitter de la señal</label>
+  </div>
+
+  <div class="question" data-correct="a">
+    <h3>6. ¿Qué desventaja tiene HDB3?</h3>
+    <label><input type="radio" name="q6" value="a"> Mayor complejidad del codificador y decodificador</label>
+    <label><input type="radio" name="q6" value="b"> Bajo consumo de energía</label>
+    <label><input type="radio" name="q6" value="c"> Incompatibilidad con AMI</label>
+  </div>
+
+  <div class="botones">
+    <button type="button" onclick="corregir()">Corregir</button>
+    <button type="button"><a href="index.html">Recargar</a></button>
+  </div>
+</form>
+
+<script src="script.js"></script>
+
+</body>
+</html>
